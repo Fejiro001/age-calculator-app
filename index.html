@@ -15,40 +15,62 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/output.css" />
 
-    <title>Age calculator app</title>
+    <title>Age Calculator App</title>
   </head>
-  <body>
-    <main>
-      <form>
-        <label for="day">Day</label>
-        <input type="text" placeholder="DD" id="day" />
 
-        <label for="month">Month</label>
-        <input type="text" placeholder="MM" id="month" />
+  <body
+    class="bg-off-white min-h-screen flex flex-col justify-center items-center font-primary p-4"
+  >
+    <main
+      class="bg-white container mx-auto p-8 rounded-t-xl rounded-ee-[5rem] rounded-es-xl grid gap-4"
+    >
+      <form class="flex justify-start gap-4 pb-8">
+        <div class="">
+          <label for="day" class="label-style">Day</label>
+          <input class="input-style" type="text" placeholder="DD" id="day" />
+        </div>
 
-        <label for="year">Year</label>
-        <input type="text" placeholder="YYYY" id="year" />
+        <div class="">
+          <label for="month" class="label-style">Month</label>
+          <input class="input-style" type="text" placeholder="MM" id="month" />
+        </div>
+
+        <div class="">
+          <label for="year" class="label-style">Year</label>
+          <input class="input-style" type="text" placeholder="YYYY" id="year" />
+        </div>
       </form>
 
-      <div>
-        <hr />
-        <button><img src="./assets/images/icon-arrow.svg" alt="arrow down icon" /></button>
+      <div class="flex items-center relative">
+        <hr class="w-full border-light-grey" />
+        <button class="bg-primary rounded-full p-4 absolute left-1/2 -translate-x-1/2">
+          <img
+            
+            class="h-auto"
+            src="./assets/images/icon-arrow.svg"
+            alt="arrow down icon"
+          />
+        </button>
       </div>
 
-      <div>
-        <p><span class="">--</span> years</p>
-        <p><span class="">--</span> months</p>
-        <p><span class="">--</span> days</p>
+      <div class="pt-8">
+        <p class="date-style"><span class="date-span-style">--</span> years</p>
+        <p class="date-style"><span class="date-span-style">--</span> months</p>
+        <p class="date-style"><span class="date-span-style">--</span> days</p>
       </div>
     </main>
 
-    <footer class="attribution">
+    <footer class="text-center">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-primary"
         >Frontend Mentor</a
-      >. Coded by <a href="" target="_blank">Fejiro Abere</a>.
+      >. Coded by
+      <a href="" target="_blank" class="text-primary">Fejiro Abere</a>.
     </footer>
   </body>
 </html>
