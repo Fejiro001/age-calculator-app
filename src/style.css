@@ -2,25 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins-Italic.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins-Bold.ttf);
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
 
-@font-face {
-    font-family: "Poppins";
-    src: url(../assets/fonts/Poppins-Italic.ttf);
-    font-weight: 400;
-    font-display: swap;
-    font-style: italic;
-}
-@font-face {
-    font-family: "Poppins";
-    src: url(../assets/fonts/Poppins-Bold.ttf);
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-}
-@font-face {
-    font-family: "Poppins";
-    src: url(../assets/fonts/Poppins-ExtraBoldItalic.ttf);
-    font-weight: 800;
-    font-display: swap;
-    font-style: italic;
+@layer components {
+  .label-style {
+    @apply text-smokey-grey uppercase;
+  }
+  .input-style {
+    @apply border-light-grey border w-full p-4 rounded-md text-base placeholder:text-smokey-grey;
+  }
+  .date-style {
+    @apply text-5xl;
+  }
+  .date-span-style {
+    @apply text-primary;
+  }
 }
