@@ -15,29 +15,40 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="./src/output.css">
+
     <title>Age calculator app</title>
   </head>
   <body>
     <main>
-      <label for="day">Day</label>
-      <input type="date" placeholder="DD" id="day" />
+      <form>
+        <label for="day">Day</label>
+        <input type="text" placeholder="DD" id="day" />
 
-      <label for="month">Month</label>
-      <input type="text" placeholder="MM" id="month" />
+        <label for="month">Month</label>
+        <input type="text" placeholder="MM" id="month" />
 
-      <label for="year">Year</label>
-      <input type="text" placeholder="YYYY" id="year" />
+        <label for="year">Year</label>
+        <input type="text" placeholder="YYYY" id="year" />
+      </form>
 
-      <p>-- years</p>
-      <p>-- months</p>
-      <p>-- days</p>
+      <div>
+        <hr />
+        <button><img src="./assets/images/icon-arrow.svg" alt="arrow down icon" /></button>
+      </div>
+
+      <div>
+        <p><span class="display">--</span> years</p>
+        <p><span class="display">--</span> months</p>
+        <p><span class="display">--</span> days</p>
+      </div>
     </main>
 
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Fejiro Abere</a>.
+      >. Coded by <a href="" target="_blank">Fejiro Abere</a>.
     </footer>
   </body>
 </html>
