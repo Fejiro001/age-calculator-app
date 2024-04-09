@@ -29,12 +29,15 @@
     @apply text-smokey-grey uppercase font-bold;
   }
   .input-style {
-    @apply border-light-grey border w-full py-3 px-4 rounded-md text-lg placeholder:text-smokey-grey font-bold;
+    @apply border-light-grey border w-full py-3 px-4 rounded-md text-lg placeholder:text-smokey-grey font-bold focus:outline-primary;
   }
   .date-style {
-    @apply text-6xl font-extrabold italic;
+    @apply text-large font-extrabold italic;
   }
   .date-span-style {
     @apply text-primary;
+  }
+  .error {
+    @apply text-light-red font-normal italic text-sm;
   }
 }

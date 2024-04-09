@@ -21,32 +21,35 @@
   </head>
 
   <body
-    class="bg-off-white min-h-screen flex flex-col justify-start min-lg:justify-center items-center font-primary p-4 pt-[5.5rem]"
+    class="bg-off-white min-h-screen flex flex-col justify-start lg:justify-center items-center font-primary px-4 pt-[5.5rem] lg:pt-0"
   >
     <main
       class="bg-white container mx-auto py-12 px-6 rounded-t-3xl rounded-ee-[5rem] rounded-es-3xl grid gap-4 max-w-[52rem]"
     >
-      <form class="flex justify-start gap-4 pb-11">
-        <div class="">
+      <form class="flex justify-start gap-4 pb-11 lg:p-0">
+        <div class="flex-1">
           <label for="day" class="label-style">Day</label>
           <input class="input-style" type="text" placeholder="DD" id="day" />
+          <span class="error"></span>
         </div>
 
-        <div class="">
+        <div class="flex-1">
           <label for="month" class="label-style">Month</label>
           <input class="input-style" type="text" placeholder="MM" id="month" />
+          <span class="error"></span>
         </div>
 
-        <div class="">
+        <div class="flex-1">
           <label for="year" class="label-style">Year</label>
           <input class="input-style" type="text" placeholder="YYYY" id="year" />
+          <span class="error"></span>
         </div>
       </form>
 
       <div class="flex items-center relative">
         <hr class="w-full border-light-grey" />
         <button
-          class="bg-primary rounded-full p-3 absolute left-1/2 -translate-x-1/2 min-lg:static"
+          class="bg-primary rounded-full p-3 absolute left-1/2 -translate-x-1/2 lg:static"
         >
           <img
             class="h-auto"
@@ -56,14 +59,14 @@
         </button>
       </div>
 
-      <div class="pt-14">
+      <div class="pt-14 lg:p-0">
         <p class="date-style"><span class="date-span-style">38</span> years</p>
         <p class="date-style"><span class="date-span-style">3</span> months</p>
         <p class="date-style"><span class="date-span-style">26</span> days</p>
       </div>
     </main>
 
-    <footer class="text-center">
+    <footer class="text-center font-bold">
       Challenge by
       <a
         href="https://www.frontendmentor.io?ref=challenge"
