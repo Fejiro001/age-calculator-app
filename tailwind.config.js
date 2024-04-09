@@ -14,6 +14,9 @@ module.exports = {
         "smokey-grey": "hsl(0, 1%, 44%)",
         "off-black": "hsl(0, 0%, 8%)",
       },
+      screens: {
+        lg: "1024px",
+      },
     },
   },
   plugins: [],

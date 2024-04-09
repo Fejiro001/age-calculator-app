@@ -26,13 +26,13 @@
 
 @layer components {
   .label-style {
-    @apply text-smokey-grey uppercase;
+    @apply text-smokey-grey uppercase font-bold;
   }
   .input-style {
-    @apply border-light-grey border w-full p-4 rounded-md text-base placeholder:text-smokey-grey;
+    @apply border-light-grey border w-full py-3 px-4 rounded-md text-lg placeholder:text-smokey-grey font-bold;
   }
   .date-style {
-    @apply text-5xl;
+    @apply text-6xl font-extrabold italic;
   }
   .date-span-style {
     @apply text-primary;
