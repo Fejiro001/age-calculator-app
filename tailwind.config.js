@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js}", "index.html"],
+  content: ["./src/script.js}", "index.html"],
   theme: {
     screens: {
       lg: "820px",
@@ -10,7 +10,10 @@ module.exports = {
         primary: ["Poppins", "sans-serif"],
       },
       fontSize: {
-        large: "clamp(3.75rem,6rem,5.5rem)"
+        "label-font": "clamp(.9rem,.8vw,2rem)",
+        "input-font": "clamp(1.25rem,2.2vw,3rem)",
+        large: "clamp(3.5rem,8vw,6.5rem)",
+        "small": "clamp(1.25rem,2vw,2.5rem)"
       },
       colors: {
         primary: "hsl(259, 100%, 65%)",
