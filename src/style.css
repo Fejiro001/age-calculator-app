@@ -32,7 +32,7 @@
     @apply text-smokey-grey uppercase font-bold text-label-font;
   }
   .input-style {
-    @apply border-light-grey border w-full max-w-[5.4rem] lg:max-w-40 py-3 px-4 rounded-md text-input-font placeholder:text-smokey-grey font-bold focus:outline-primary;
+    @apply border-light-grey border w-full max-w-[5.45rem] sm:max-w-32 lg:max-w-40 py-3 px-4 rounded-md text-input-font placeholder:text-smokey-grey font-bold focus:outline-primary;
   }
   .date-style {
     @apply text-large font-extrabold italic leading-[1.1] break-all;
@@ -41,6 +41,6 @@
     @apply text-primary pe-2;
   }
   .error {
-    @apply text-light-red font-normal italic text-small;
+    @apply text-light-red font-normal italic text-small mt-4;
   }
 }

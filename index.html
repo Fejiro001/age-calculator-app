@@ -49,23 +49,41 @@
       class="bg-white container mx-auto py-12 px-6 lg:px-[3.25rem] rounded-t-3xl rounded-ee-[5rem] lg:rounded-ee-[9rem] rounded-es-3xl gap-4 lg:gap-0 grid max-w-[52rem]"
     >
       <form
-        class="flex justify-start gap-4 lg:gap-8 pb-11 lg:p-0 w-fit flex-wrap"
+        class="flex justify-start gap-4 lg:gap-8 pb-8 lg:p-0 w-fit flex-wrap"
       >
         <div class="input-container-style">
-          <label for="day" class="label-style">Day</label>
-          <input class="input-style" type="text" placeholder="DD" id="day" />
+          <label id="label" for="day" class="label-style">Day</label>
+          <input
+            class="input-style input-field"
+            type="text"
+            placeholder="DD"
+            id="day"
+            required
+          />
           <span class="error"></span>
         </div>
 
         <div class="input-container-style">
-          <label for="month" class="label-style">Month</label>
-          <input class="input-style" type="text" placeholder="MM" id="month" />
+          <label id="label" for="month" class="label-style">Month</label>
+          <input
+            class="input-style input-field"
+            type="text"
+            placeholder="MM"
+            id="month"
+            required
+          />
           <span class="error"></span>
         </div>
 
         <div class="input-container-style">
-          <label for="year" class="label-style">Year</label>
-          <input class="input-style" type="text" placeholder="YYYY" id="year" />
+          <label id="label" for="year" class="label-style">Year</label>
+          <input
+            class="input-style input-field"
+            type="text"
+            placeholder="YYYY"
+            id="year"
+            required
+          />
           <span class="error"></span>
         </div>
       </form>
@@ -73,11 +91,12 @@
       <div class="flex items-center relative">
         <hr class="w-full border-light-grey" />
         <button
-        title="Calculate Age"
-          class="bg-primary hover:bg-off-black focus:bg-off-black rounded-full p-5 lg:py-5 lg:px-6 absolute left-1/2 -translate-x-1/2 lg:static lg:-translate-x-0"
+          id="calculate-btn"
+          title="Calculate Age"
+          class="bg-primary hover:bg-off-black focus-visible:bg-off-black rounded-full p-5 lg:py-5 lg:px-6 absolute left-1/2 -translate-x-1/2 lg:static lg:-translate-x-0"
         >
           <img
-            class="size-6 lg:size-14"
+            class="size-6 sm:size-8 lg:size-14"
             src="./assets/images/icon-arrow.svg"
             alt="calculate age"
           />
@@ -85,9 +104,9 @@
       </div>
 
       <div class="pt-14 lg:p-0">
-        <p class="date-style"><span class="date-span-style">- -</span>years</p>
-        <p class="date-style"><span class="date-span-style">- -</span>months</p>
-        <p class="date-style"><span class="date-span-style">- -</span>days</p>
+        <p class="date-style"><span class="date-span-style" id="age">- -</span>years</p>
+        <p class="date-style"><span class="date-span-style" id="age">- -</span>months</p>
+        <p class="date-style"><span class="date-span-style" id="age">- -</span>days</p>
       </div>
     </main>
 
