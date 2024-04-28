@@ -758,10 +758,6 @@ video {
   border-end-start-radius: 1.5rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-light-grey {
   --tw-border-opacity: 1;
   border-color: hsl(0 0% 86% / var(--tw-border-opacity));

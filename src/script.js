@@ -70,10 +70,16 @@ const validateMonth = function () {
 const validateYear = function () {
   const today = new Date();
   if (year.value !== "") {
-    if (year.value < 1 || year.value > today.getFullYear() || isNaN(year.value)) {
+    // Must be between year 100 and present year
+    if (
+      year.value < 100 ||
+      year.value > today.getFullYear() ||
+      isNaN(year.value)
+    ) {
       yearLabel.style.color = errorColor;
       year.style.borderColor = errorColor;
-      yearError.innerHTML = "Must be in the past";
+      yearError.innerHTML =
+        year.value < 100 ? "Must be 100 or above" : "Must be in the past";
     }
   }
 };
