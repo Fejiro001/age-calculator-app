@@ -4,7 +4,7 @@
 - Calculate a persons age in days, months and year from the form
 - Make sure the date is valid and display validation errors if:
   - Any field is empty when the form is submitted (This field is required)
-  - The day number is not between 1-31 (Must be a valid date)
+  - The day number is not between 1-31 (Must be a valid day)
   - The month number is not between 1-12 (Must be a valid month)
   - The year number is in the future (Must be in the past)
   - The date is invalid e.g. 31/04/1991 (there are 30 days in April) (Must be a valid date)
@@ -48,7 +48,7 @@ const validateDay = function () {
       if (day.value < 1 || day.value > 31 || isNaN(day.value)) {
         dayLabel.style.color = errorColor;
         day.style.borderColor = errorColor;
-        dayError.innerHTML = "Must be a valid date";
+        dayError.innerHTML = "Must be a valid day";
       }
     }
   }
@@ -67,10 +67,20 @@ const validateMonth = function () {
 };
 
 // INVALID YEAR
-
+const validateYear = function () {
+  const today = new Date();
+  if (year.value !== "") {
+    if (year.value < 1 || year.value > today.getFullYear() || isNaN(year.value)) {
+      yearLabel.style.color = errorColor;
+      year.style.borderColor = errorColor;
+      yearError.innerHTML = "Must be in the past";
+    }
+  }
+};
 
 calculateAgeButton.addEventListener("click", function () {
   checkInputEmpty();
   validateDay();
   validateMonth();
+  validateYear();
 });
