@@ -37,7 +37,7 @@ const checkInputEmpty = function () {
 };
 
 const [day, month, year] = formInputs;
-const [dayLabel, mothLabel, yearLabel] = formLabels;
+const [dayLabel, monthLabel, yearLabel] = formLabels;
 const [dayError, monthError, yearError] = inputErrors;
 
 // INVALID DAY
@@ -49,16 +49,28 @@ const validateDay = function () {
         dayLabel.style.color = errorColor;
         day.style.borderColor = errorColor;
         dayError.innerHTML = "Must be a valid date";
-      } else {
-        console.log("Date is valid");
       }
     }
   }
 };
 
 // INVALID MONTH
+const validateMonth = function () {
+  if (month.value !== "") {
+    // Must be a number and between 1 and 12 inclusive
+    if (month.value < 1 || month.value > 12 || isNaN(month.value)) {
+      monthLabel.style.color = errorColor;
+      month.style.borderColor = errorColor;
+      monthError.innerHTML = "Must be a valid month";
+    }
+  }
+};
+
+// INVALID YEAR
+
 
 calculateAgeButton.addEventListener("click", function () {
   checkInputEmpty();
   validateDay();
+  validateMonth();
 });
